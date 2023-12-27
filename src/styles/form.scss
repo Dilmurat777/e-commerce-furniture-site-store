@@ -1,0 +1,64 @@
+.form {
+	padding: 21px 30px;
+	height: 100vh;
+	color: #000;
+	&__logo {
+		margin-bottom: 102px;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 30px;
+		color: #000;
+		
+	}
+	&__content {
+		padding-left: 86px;
+
+		&-title {
+			font-weight: 500;
+			font-size: 30px;
+			line-height: 45px;
+		}
+
+		&-text {
+			font-size: 16px;
+			line-height: 24px;
+			margin: 22px 0 52px;
+		}
+	}
+	&__btn {
+		background: #0c21c1;
+		box-shadow: 0px 4px 26px rgba(0,0,0,0.5);
+		border-radius: 32px;
+
+		font-weight: 500;
+		font-size: 17px;
+		line-height: 26px;
+
+		color: #fff;
+		padding: 17px 0;
+		margin-top: 95px;
+		width: 429px;
+	}
+	&__label {
+		&-text {
+			font-weight: 500;
+			font-size: 13px;
+			line-height: 20px;
+			color: #999999;
+		}
+		&-field {
+			padding-bottom: 3px;
+			width: 429px;
+			margin-top: 11px;
+			display: flex;
+			column-gap: 10px;
+			align-items: center;
+			border-bottom: 2px solid #999999;
+		}
+		&-input {
+			border: none;
+			outline: none;
+			width: 100%;
+		}
+	}
+}

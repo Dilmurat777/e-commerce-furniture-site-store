@@ -6,6 +6,7 @@ import { CustomContext } from '../../config/context/context';
 import { FaHeart } from 'react-icons/fa6';
 
 const Card = ({ item }) => {
+  
   const { favorites, favoritesHandler, addCarts, user, addCartsCountMinus, addCartsCountPlus } =
     useContext(CustomContext);
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ const Card = ({ item }) => {
         {favorites.some((el) => el.id === item.id) ? <FaHeart color="red" /> : <AiOutlineHeart />}
       </span>
       <Link to={`/product/${item.id}`}>
-        <img src={`/${item?.images[0]}`} alt="" className="card__image" />
+        <img src={`${item?.images[0]}`} alt="" className="card__image" />
       </Link>
       <h3 className="card__title">{item.title}</h3>
       <p className="card__category">{item.category}</p>

@@ -11,7 +11,7 @@ const Catalog = () => {
   const [category, setCategory] = useState('');
   const [sort, setSort] = useState('');
   const [slider, setSlider] = useState([0, 30000]);
-
+  
   useEffect(() => {
     let queryParamFromTo = `price_gte=${slider[0]}&price_lte=${slider[1]}`
     let queryParamsApi = `?${search.length ? `category_like=${search}&` : ''}${

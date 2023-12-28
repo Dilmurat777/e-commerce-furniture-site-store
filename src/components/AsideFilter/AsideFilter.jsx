@@ -4,10 +4,10 @@ import RangeInput from "./RangeInput.jsx";
 import {Button} from "@mui/material";
 import  PropTypes  from 'prop-types';
 
-const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
+// const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 const AsideFilter = ({category, setCategory, sort, setSort, slider, setSlider}) => {
 
-    const colors = ['red', 'green', 'blue'];
+    // const colors = ['red', 'green', 'blue'];
 
     const resetFilter = () => {
         setSort('')

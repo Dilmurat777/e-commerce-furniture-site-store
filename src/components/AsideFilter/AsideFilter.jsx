@@ -39,7 +39,7 @@ const AsideFilter = ({category, setCategory, sort, setSort, slider, setSlider}) 
 
             </div>
 
-            <button variant="contained" onClick={resetFilter}>Сбросить</button>
+            <button onClick={resetFilter}>Сбросить</button>
         </aside>
     );
 };

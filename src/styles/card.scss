@@ -1,6 +1,6 @@
 .card {
   width: calc(25% - 22.5px);
-  padding: 74px 20px 20px;
+  padding: 50px 20px 20px;
   position: relative;
   &:hover {
     background: #FFFFFF;
@@ -17,8 +17,8 @@
     }
   }
   &__image {
-    width: 75%;
-    height: 120px;
+    width: 70%;
+    height: 115px;
     object-fit: cover;
     display: flex;
     margin: 0 auto;
@@ -28,6 +28,7 @@
     font-size: 16px;
     line-height: 19px;
     color: #414141;
+    margin-top: 25px;
   }
   &__category{
     font-size: 11px;

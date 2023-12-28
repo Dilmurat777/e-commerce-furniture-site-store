@@ -3,33 +3,28 @@ import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 import debounce from "@material-ui/core/utils/debounce";
 
-const  RangeInput = ({slider, setSlider}) =>{
+const RangeInput = ({ slider, setSlider }) => {
+  const handleChange = (event, newValue) => {
+    setSlider(newValue);
+  };
 
-
-    const handleChange = (event,newValue) => {
-        setSlider(newValue);
-    };
-
-    return (
-        <Box sx={{ width: '100%' }}>
-            <Slider
-
-                defaultValue={slider}
-                onChange={debounce(handleChange, 1000)}
-                valueLabelDisplay="auto"
-                step={100}
-                min={0}
-                max={30000}
-            />
-        </Box>
-    );
-}
+  return (
+    <Box sx={{ width: '100%' }}>
+      <Slider
+        value={slider}
+        onChange={debounce(handleChange, 1000)}
+        valueLabelDisplay="auto"
+        step={100}
+        min={0}
+        max={30000}
+      />
+    </Box>
+  );
+};
 
 RangeInput.propTypes = {
-    slider: PropTypes.array,
-    setSlider: PropTypes.func,
-}
+  slider: PropTypes.array,
+  setSlider: PropTypes.func,
+};
 
-export default RangeInput
-
-
+export default RangeInput;

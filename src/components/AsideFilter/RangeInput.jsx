@@ -1,7 +1,7 @@
 import { PropTypes } from 'prop-types';
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
-import debounce from "@material-ui/core/utils/debounce";
+
 
 const  RangeInput = ({slider, setSlider}) =>{
 
@@ -15,7 +15,6 @@ const  RangeInput = ({slider, setSlider}) =>{
             <Slider
 
                 defaultValue={slider}
-                onChange={debounce(handleChange, 1000)}
                 valueLabelDisplay="auto"
                 step={100}
                 min={0}

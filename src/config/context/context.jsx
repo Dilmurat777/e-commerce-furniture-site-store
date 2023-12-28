@@ -167,6 +167,7 @@ const Context = ({ children }) => {
 				'content-type': 'application/json',
 			},
 			json: {
+        point: Math.floor(user.point + order.totalPrice / 100 * 7), 
 				orders: [...user.orders, order],
 				carts: []
 			}

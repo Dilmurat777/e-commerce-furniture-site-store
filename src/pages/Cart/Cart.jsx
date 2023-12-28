@@ -43,7 +43,7 @@ const Cart = () => {
           {user.carts?.map((item) => (
             <div key={item.id} className="cart__card">
               <div className="cart__card-item">
-                <img src={`/${item.images[3]}`} alt="" />
+                <img src={`${item.images[0]}`} alt="" />
                 <div className="cart__card-info">
                   <h3 className="cart__card-title">{item.title}</h3>
                   <p className="cart__card-size">

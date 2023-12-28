@@ -1,5 +1,5 @@
 import ky from "ky";
 
-const api = ky.create({prefixUrl: 'http://localhost:8080/'})
+const api = ky.create({prefixUrl: 'https://furniture-db.onrender.com/'})
 
 export default api;

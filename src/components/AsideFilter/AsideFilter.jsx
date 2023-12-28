@@ -1,7 +1,5 @@
 import FilterSelect from "../FilterSelect/FilterSelect.jsx";
-// import Checkbox from '@mui/material/Checkbox';
 import RangeInput from "./RangeInput.jsx";
-import {Button} from "@mui/material";
 import  PropTypes  from 'prop-types';
 
 // const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
@@ -41,7 +39,7 @@ const AsideFilter = ({category, setCategory, sort, setSort, slider, setSlider}) 
 
             </div>
 
-            <Button variant="contained" onClick={resetFilter}>Сбросить</Button>
+            <button variant="contained" onClick={resetFilter}>Сбросить</button>
         </aside>
     );
 };
